@@ -1,0 +1,36 @@
+C:\Users\admin\Desktop\архив\Конвертер\WindowsFormsApplication6\bin\Release\WindowsFormsApplication6.exe.config
+C:\Users\admin\Desktop\архив\Конвертер\WindowsFormsApplication6\bin\Release\WindowsFormsApplication6.exe
+C:\Users\admin\Desktop\архив\Конвертер\WindowsFormsApplication6\bin\Release\WindowsFormsApplication6.pdb
+C:\Users\admin\Desktop\архив\Конвертер\WindowsFormsApplication6\obj\Release\WindowsFormsApplication6.csprojResolveAssemblyReference.cache
+C:\Users\admin\Desktop\архив\Конвертер\WindowsFormsApplication6\obj\Release\WindowsFormsApplication6.Form1.resources
+C:\Users\admin\Desktop\архив\Конвертер\WindowsFormsApplication6\obj\Release\WindowsFormsApplication6.Properties.Resources.resources
+C:\Users\admin\Desktop\архив\Конвертер\WindowsFormsApplication6\obj\Release\WindowsFormsApplication6.csproj.GenerateResource.Cache
+C:\Users\admin\Desktop\архив\Конвертер\WindowsFormsApplication6\obj\Release\WindowsFormsApplication6.exe
+C:\Users\admin\Desktop\архив\Конвертер\WindowsFormsApplication6\obj\Release\WindowsFormsApplication6.pdb
+C:\Users\admin\Desktop\То что нунжа\Конвертер\WindowsFormsApplication6\bin\Release\WindowsFormsApplication6.exe.config
+C:\Users\admin\Desktop\То что нунжа\Конвертер\WindowsFormsApplication6\obj\Release\WindowsFormsApplication6.exe
+C:\Users\admin\Desktop\То что нунжа\Конвертер\WindowsFormsApplication6\obj\Release\WindowsFormsApplication6.pdb
+C:\Users\admin\Desktop\То что нунжа\Конвертер\WindowsFormsApplication6\bin\Release\WindowsFormsApplication6.exe
+C:\Users\admin\Desktop\То что нунжа\Конвертер\WindowsFormsApplication6\bin\Release\WindowsFormsApplication6.pdb
+C:\Users\admin\Desktop\То что нунжа\Конвертер\WindowsFormsApplication6\obj\Release\WindowsFormsApplication6.csprojResolveAssemblyReference.cache
+C:\Users\admin\Desktop\То что нунжа\Конвертер\WindowsFormsApplication6\obj\Release\WindowsFormsApplication6.Form1.resources
+C:\Users\admin\Desktop\То что нунжа\Конвертер\WindowsFormsApplication6\obj\Release\WindowsFormsApplication6.Properties.Resources.resources
+C:\Users\admin\Desktop\То что нунжа\Конвертер\WindowsFormsApplication6\obj\Release\WindowsFormsApplication6.csproj.GenerateResource.Cache
+C:\Users\admin\Desktop\Приутневу Александру\Переделанный конвертер\Код\Конвертер\WindowsFormsApplication6\bin\Release\WindowsFormsApplication6.exe.config
+C:\Users\admin\Desktop\Приутневу Александру\Переделанный конвертер\Код\Конвертер\WindowsFormsApplication6\obj\Release\WindowsFormsApplication6.exe
+C:\Users\admin\Desktop\Приутневу Александру\Переделанный конвертер\Код\Конвертер\WindowsFormsApplication6\obj\Release\WindowsFormsApplication6.pdb
+C:\Users\admin\Desktop\Приутневу Александру\Переделанный конвертер\Код\Конвертер\WindowsFormsApplication6\obj\Release\WindowsFormsApplication6.csprojResolveAssemblyReference.cache
+C:\Users\admin\Desktop\Приутневу Александру\Переделанный конвертер\Код\Конвертер\WindowsFormsApplication6\obj\Release\WindowsFormsApplication6.Form1.resources
+C:\Users\admin\Desktop\Приутневу Александру\Переделанный конвертер\Код\Конвертер\WindowsFormsApplication6\obj\Release\WindowsFormsApplication6.Properties.Resources.resources
+C:\Users\admin\Desktop\Приутневу Александру\Переделанный конвертер\Код\Конвертер\WindowsFormsApplication6\obj\Release\WindowsFormsApplication6.csproj.GenerateResource.Cache
+C:\Users\admin\Desktop\Приутневу Александру\Переделанный конвертер\Код\Конвертер\WindowsFormsApplication6\bin\Release\WindowsFormsApplication6.exe
+C:\Users\admin\Desktop\Приутневу Александру\Переделанный конвертер\Код\Конвертер\WindowsFormsApplication6\bin\Release\WindowsFormsApplication6.pdb
+D:\Обучение программиста\Мои проекты\Рабочий конвертер\Переделанный конвертер\Код\Конвертер\WindowsFormsApplication6\bin\Release\WindowsFormsApplication6.exe.config
+D:\Обучение программиста\Мои проекты\Рабочий конвертер\Переделанный конвертер\Код\Конвертер\WindowsFormsApplication6\obj\Release\WindowsFormsApplication6.exe
+D:\Обучение программиста\Мои проекты\Рабочий конвертер\Переделанный конвертер\Код\Конвертер\WindowsFormsApplication6\obj\Release\WindowsFormsApplication6.pdb
+D:\Обучение программиста\Мои проекты\Рабочий конвертер\Переделанный конвертер\Код\Конвертер\WindowsFormsApplication6\bin\Release\WindowsFormsApplication6.exe
+D:\Обучение программиста\Мои проекты\Рабочий конвертер\Переделанный конвертер\Код\Конвертер\WindowsFormsApplication6\bin\Release\WindowsFormsApplication6.pdb
+D:\Обучение программиста\Мои проекты\Рабочий конвертер\Переделанный конвертер\Код\Конвертер\WindowsFormsApplication6\obj\Release\WindowsFormsApplication6.csprojResolveAssemblyReference.cache
+D:\Обучение программиста\Мои проекты\Рабочий конвертер\Переделанный конвертер\Код\Конвертер\WindowsFormsApplication6\obj\Release\WindowsFormsApplication6.Form1.resources
+D:\Обучение программиста\Мои проекты\Рабочий конвертер\Переделанный конвертер\Код\Конвертер\WindowsFormsApplication6\obj\Release\WindowsFormsApplication6.Properties.Resources.resources
+D:\Обучение программиста\Мои проекты\Рабочий конвертер\Переделанный конвертер\Код\Конвертер\WindowsFormsApplication6\obj\Release\WindowsFormsApplication6.csproj.GenerateResource.Cache

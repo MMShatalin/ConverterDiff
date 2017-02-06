@@ -1,0 +1,72 @@
+c:\users\михаил\documents\visual studio 2013\Projects\WindowsFormsApplication6\WindowsFormsApplication6\bin\Debug\WindowsFormsApplication6.exe.config
+c:\users\михаил\documents\visual studio 2013\Projects\WindowsFormsApplication6\WindowsFormsApplication6\bin\Debug\WindowsFormsApplication6.exe
+c:\users\михаил\documents\visual studio 2013\Projects\WindowsFormsApplication6\WindowsFormsApplication6\bin\Debug\WindowsFormsApplication6.pdb
+c:\users\михаил\documents\visual studio 2013\Projects\WindowsFormsApplication6\WindowsFormsApplication6\obj\Debug\WindowsFormsApplication6.csprojResolveAssemblyReference.cache
+c:\users\михаил\documents\visual studio 2013\Projects\WindowsFormsApplication6\WindowsFormsApplication6\obj\Debug\WindowsFormsApplication6.Form1.resources
+c:\users\михаил\documents\visual studio 2013\Projects\WindowsFormsApplication6\WindowsFormsApplication6\obj\Debug\WindowsFormsApplication6.Properties.Resources.resources
+c:\users\михаил\documents\visual studio 2013\Projects\WindowsFormsApplication6\WindowsFormsApplication6\obj\Debug\WindowsFormsApplication6.csproj.GenerateResource.Cache
+c:\users\михаил\documents\visual studio 2013\Projects\WindowsFormsApplication6\WindowsFormsApplication6\obj\Debug\WindowsFormsApplication6.exe
+c:\users\михаил\documents\visual studio 2013\Projects\WindowsFormsApplication6\WindowsFormsApplication6\obj\Debug\WindowsFormsApplication6.pdb
+F:\для конвертера\WindowsFormsApplication6\WindowsFormsApplication6\bin\Debug\WindowsFormsApplication6.exe.config
+F:\для конвертера\WindowsFormsApplication6\WindowsFormsApplication6\obj\Debug\WindowsFormsApplication6.exe
+F:\для конвертера\WindowsFormsApplication6\WindowsFormsApplication6\obj\Debug\WindowsFormsApplication6.pdb
+F:\для конвертера\WindowsFormsApplication6\WindowsFormsApplication6\obj\Debug\WindowsFormsApplication6.csprojResolveAssemblyReference.cache
+F:\для конвертера\WindowsFormsApplication6\WindowsFormsApplication6\obj\Debug\WindowsFormsApplication6.Form1.resources
+F:\для конвертера\WindowsFormsApplication6\WindowsFormsApplication6\obj\Debug\WindowsFormsApplication6.Properties.Resources.resources
+F:\для конвертера\WindowsFormsApplication6\WindowsFormsApplication6\obj\Debug\WindowsFormsApplication6.csproj.GenerateResource.Cache
+F:\для конвертера\WindowsFormsApplication6\WindowsFormsApplication6\bin\Debug\WindowsFormsApplication6.exe
+F:\для конвертера\WindowsFormsApplication6\WindowsFormsApplication6\bin\Debug\WindowsFormsApplication6.pdb
+C:\Users\Михаил\Desktop\WindowsFormsApplication6\WindowsFormsApplication6\bin\Debug\WindowsFormsApplication6.exe.config
+C:\Users\Михаил\Desktop\WindowsFormsApplication6\WindowsFormsApplication6\obj\Debug\WindowsFormsApplication6.exe
+C:\Users\Михаил\Desktop\WindowsFormsApplication6\WindowsFormsApplication6\obj\Debug\WindowsFormsApplication6.pdb
+C:\Users\Михаил\Desktop\WindowsFormsApplication6\WindowsFormsApplication6\bin\Debug\WindowsFormsApplication6.exe
+C:\Users\Михаил\Desktop\WindowsFormsApplication6\WindowsFormsApplication6\bin\Debug\WindowsFormsApplication6.pdb
+C:\Users\Михаил\Desktop\WindowsFormsApplication6\WindowsFormsApplication6\obj\Debug\WindowsFormsApplication6.csprojResolveAssemblyReference.cache
+C:\Users\Михаил\Desktop\WindowsFormsApplication6\WindowsFormsApplication6\obj\Debug\WindowsFormsApplication6.Form1.resources
+C:\Users\Михаил\Desktop\WindowsFormsApplication6\WindowsFormsApplication6\obj\Debug\WindowsFormsApplication6.Properties.Resources.resources
+C:\Users\Михаил\Desktop\WindowsFormsApplication6\WindowsFormsApplication6\obj\Debug\WindowsFormsApplication6.csproj.GenerateResource.Cache
+H:\WindowsFormsApplication6\WindowsFormsApplication6\bin\Debug\WindowsFormsApplication6.exe.config
+H:\WindowsFormsApplication6\WindowsFormsApplication6\obj\Debug\WindowsFormsApplication6.exe
+H:\WindowsFormsApplication6\WindowsFormsApplication6\obj\Debug\WindowsFormsApplication6.pdb
+H:\WindowsFormsApplication6\WindowsFormsApplication6\bin\Debug\WindowsFormsApplication6.exe
+H:\WindowsFormsApplication6\WindowsFormsApplication6\bin\Debug\WindowsFormsApplication6.pdb
+H:\WindowsFormsApplication6\WindowsFormsApplication6\obj\Debug\WindowsFormsApplication6.csprojResolveAssemblyReference.cache
+H:\WindowsFormsApplication6\WindowsFormsApplication6\obj\Debug\WindowsFormsApplication6.Form1.resources
+H:\WindowsFormsApplication6\WindowsFormsApplication6\obj\Debug\WindowsFormsApplication6.Properties.Resources.resources
+H:\WindowsFormsApplication6\WindowsFormsApplication6\obj\Debug\WindowsFormsApplication6.csproj.GenerateResource.Cache
+P:\phisCommon\МОИ ДОКУМЕНТЫ\Белобродский\от Шаталина\Конвертер\WindowsFormsApplication6\bin\Debug\WindowsFormsApplication6.exe.config
+P:\phisCommon\МОИ ДОКУМЕНТЫ\Белобродский\от Шаталина\Конвертер\WindowsFormsApplication6\obj\Debug\WindowsFormsApplication6.exe
+P:\phisCommon\МОИ ДОКУМЕНТЫ\Белобродский\от Шаталина\Конвертер\WindowsFormsApplication6\obj\Debug\WindowsFormsApplication6.pdb
+P:\phisCommon\МОИ ДОКУМЕНТЫ\Белобродский\от Шаталина\Конвертер\WindowsFormsApplication6\bin\Debug\WindowsFormsApplication6.exe
+P:\phisCommon\МОИ ДОКУМЕНТЫ\Белобродский\от Шаталина\Конвертер\WindowsFormsApplication6\bin\Debug\WindowsFormsApplication6.pdb
+P:\phisCommon\МОИ ДОКУМЕНТЫ\Белобродский\от Шаталина\Конвертер\WindowsFormsApplication6\obj\Debug\WindowsFormsApplication6.csprojResolveAssemblyReference.cache
+P:\phisCommon\МОИ ДОКУМЕНТЫ\Белобродский\от Шаталина\Конвертер\WindowsFormsApplication6\obj\Debug\WindowsFormsApplication6.Form1.resources
+P:\phisCommon\МОИ ДОКУМЕНТЫ\Белобродский\от Шаталина\Конвертер\WindowsFormsApplication6\obj\Debug\WindowsFormsApplication6.Properties.Resources.resources
+P:\phisCommon\МОИ ДОКУМЕНТЫ\Белобродский\от Шаталина\Конвертер\WindowsFormsApplication6\obj\Debug\WindowsFormsApplication6.csproj.GenerateResource.Cache
+C:\Users\admin\Desktop\архив\Конвертер\WindowsFormsApplication6\bin\Debug\WindowsFormsApplication6.exe.config
+C:\Users\admin\Desktop\архив\Конвертер\WindowsFormsApplication6\obj\Debug\WindowsFormsApplication6.exe
+C:\Users\admin\Desktop\архив\Конвертер\WindowsFormsApplication6\obj\Debug\WindowsFormsApplication6.pdb
+C:\Users\admin\Desktop\архив\Конвертер\WindowsFormsApplication6\bin\Debug\WindowsFormsApplication6.exe
+C:\Users\admin\Desktop\архив\Конвертер\WindowsFormsApplication6\bin\Debug\WindowsFormsApplication6.pdb
+C:\Users\admin\Desktop\архив\Конвертер\WindowsFormsApplication6\obj\Debug\WindowsFormsApplication6.csprojResolveAssemblyReference.cache
+C:\Users\admin\Desktop\архив\Конвертер\WindowsFormsApplication6\obj\Debug\WindowsFormsApplication6.Form1.resources
+C:\Users\admin\Desktop\архив\Конвертер\WindowsFormsApplication6\obj\Debug\WindowsFormsApplication6.Properties.Resources.resources
+C:\Users\admin\Desktop\архив\Конвертер\WindowsFormsApplication6\obj\Debug\WindowsFormsApplication6.csproj.GenerateResource.Cache
+C:\Users\admin\Desktop\То что нунжа\Конвертер\WindowsFormsApplication6\bin\Debug\WindowsFormsApplication6.exe.config
+C:\Users\admin\Desktop\То что нунжа\Конвертер\WindowsFormsApplication6\obj\Debug\WindowsFormsApplication6.exe
+C:\Users\admin\Desktop\То что нунжа\Конвертер\WindowsFormsApplication6\obj\Debug\WindowsFormsApplication6.pdb
+C:\Users\admin\Desktop\То что нунжа\Конвертер\WindowsFormsApplication6\obj\Debug\WindowsFormsApplication6.csprojResolveAssemblyReference.cache
+C:\Users\admin\Desktop\То что нунжа\Конвертер\WindowsFormsApplication6\obj\Debug\WindowsFormsApplication6.Form1.resources
+C:\Users\admin\Desktop\То что нунжа\Конвертер\WindowsFormsApplication6\obj\Debug\WindowsFormsApplication6.Properties.Resources.resources
+C:\Users\admin\Desktop\То что нунжа\Конвертер\WindowsFormsApplication6\obj\Debug\WindowsFormsApplication6.csproj.GenerateResource.Cache
+C:\Users\admin\Desktop\То что нунжа\Конвертер\WindowsFormsApplication6\bin\Debug\WindowsFormsApplication6.exe
+C:\Users\admin\Desktop\То что нунжа\Конвертер\WindowsFormsApplication6\bin\Debug\WindowsFormsApplication6.pdb
+C:\Users\admin\Desktop\Приутневу Александру\Переделанный конвертер\Код\Конвертер\WindowsFormsApplication6\bin\Debug\WindowsFormsApplication6.exe.config
+C:\Users\admin\Desktop\Приутневу Александру\Переделанный конвертер\Код\Конвертер\WindowsFormsApplication6\obj\Debug\WindowsFormsApplication6.exe
+C:\Users\admin\Desktop\Приутневу Александру\Переделанный конвертер\Код\Конвертер\WindowsFormsApplication6\obj\Debug\WindowsFormsApplication6.pdb
+C:\Users\admin\Desktop\Приутневу Александру\Переделанный конвертер\Код\Конвертер\WindowsFormsApplication6\bin\Debug\WindowsFormsApplication6.exe
+C:\Users\admin\Desktop\Приутневу Александру\Переделанный конвертер\Код\Конвертер\WindowsFormsApplication6\bin\Debug\WindowsFormsApplication6.pdb
+C:\Users\admin\Desktop\Приутневу Александру\Переделанный конвертер\Код\Конвертер\WindowsFormsApplication6\obj\Debug\WindowsFormsApplication6.csprojResolveAssemblyReference.cache
+C:\Users\admin\Desktop\Приутневу Александру\Переделанный конвертер\Код\Конвертер\WindowsFormsApplication6\obj\Debug\WindowsFormsApplication6.Form1.resources
+C:\Users\admin\Desktop\Приутневу Александру\Переделанный конвертер\Код\Конвертер\WindowsFormsApplication6\obj\Debug\WindowsFormsApplication6.Properties.Resources.resources
+C:\Users\admin\Desktop\Приутневу Александру\Переделанный конвертер\Код\Конвертер\WindowsFormsApplication6\obj\Debug\WindowsFormsApplication6.csproj.GenerateResource.Cache
