@@ -68,94 +68,55 @@ namespace Converter
         public void LoadSTI(string filename, MyListOfSensors p)
         {
             string line = "";
-            StreamReader mysr = new StreamReader(filename, Encoding.GetEncoding("UTF-8"));
-            MyListOfSensors MyList = new MyListOfSensors();
-            MyList.Clear();
+            StreamReader myFile = new StreamReader(filename, Encoding.GetEncoding("Windows-1251"));
+        //    MyListOfSensors MyList = new MyListOfSensors();
+          //  MyList.Clear();
 
-            line = mysr.ReadLine();
-            string[] strarray1 = { "R1","R2","R3","J1","J2","J3"};
+            line = myFile.ReadLine();
+            List<string> myKksFast = new List<string>();
+            myKksFast = line.Split('\t').ToList();
+            for (int i = 0; i < myKksFast.Count; i++)
+            {
+                if (myKksFast[i] == " " || myKksFast[i] == "")
+                {
+                    myKksFast.RemoveAt(i);
+                }
+            }
 
-            for (int i = 0; i < strarray1.Length; i++)
+            for (int i = 0; i < myKksFast.Count; i++)
             {
                 Sencors myonekks = new Sencors();
-                myonekks.KKS_Name = strarray1[i];
+                myonekks.KKS_Name = myKksFast[i];
                 p.Add(myonekks);
             }
-
-            foreach (var item in p)
+            p.RemoveAt(0);
+            while ((line = myFile.ReadLine()) != null)
             {
-                MessageBox.Show(item.KKS_Name);
-            }
-
-            while ((line = mysr.ReadLine()) != null)
-            {
-                string[] helper = new string[5];
-                List<double> helper1 = new List<double>();
-                try
+                List<string> myHelpList = new List<string>();
+                List<string> myValues = new List<string>();
+                myValues.Clear();
+                myHelpList.Clear();
+                myHelpList = line.Split('\t').ToList();
+                for (int i = 0; i < myHelpList.Count; i++)
                 {
-                    helper = line.Split('\t').ToArray();
-
-                    for (int i = 0; i < helper.Length; i++)
+                    if (myHelpList[i] == " " || myHelpList[i] == "")
                     {
-                        MessageBox.Show(helper[i]);
-                    }
-
-                    for (int i = 1; i < helper1.Count; i++)
-                    {
-                        Record OneRec = new Record();
-
-                        OneRec.DateTime = DateTime.FromOADate(helper1[0]);
-                        OneRec.Value = helper1[i];
-                        p[i - 1].MyListRecordsForOneKKS.Add(OneRec);
-                        //            MyList[MyList.Count - N + i - 1].MyListRecordsForOneKKS.Add(OneRec);
+                        myHelpList.RemoveAt(i);
                     }
                 }
-                catch(Exception ex)
+                myValues.AddRange(myHelpList);
+                for (int i = 1; i < p.Count+1; i++)
                 {
-                    MessageBox.Show(ex.Message);
+                    Record myRec = new Record();
+                    if (i != p.Count)
+                    {
+                        myRec.value1 = double.Parse(myValues[0].Replace(".", ",").Trim());
+                        myRec.Value = double.Parse(myValues[i].Replace(".", ",").Trim());
+                    }
+                    p[i-1].MyListRecordsForOneKKS.Add(myRec);
                 }
-              //  helper.Clear();
-                helper1.Clear();
-
             }
-
-            for (int i = 0; i < 3; i++)
-            {
-                p.Add(p[i]);
-
-            }
-            for (int i = 0; i < 3; i++)
-            {
-                p.RemoveAt(0);
-
-            }
-          //  MessageBox.Show(p[0].MyListRecordsForOneKKS[p[0].MyListRecordsForOneKKS.Count - 1].DateTime + " " + p[0].MyListRecordsForOneKKS[p[0].MyListRecordsForOneKKS.Count - 1].Value);
-          //  MessageBox.Show(line.ToString());
-            //int N = strarray.Count() - 1;
-            //double[] mytempdouble = new double[strarray.Count];
-            //while (line != null)
-            //{ine.
-            //    line = mysr.ReadLine();
-            //    if (line != null)
-            //    {
-            //        mytempdouble = lReplace('.', ',').Split('\t').Select(n => double.Parse(n)).ToArray();
-            //        //MessageBox.Show(mytempdouble[mytempdouble.Count()-1].ToString());
-
-            //        for (int i = 0; i < mytempdouble.Length; i++)
-            //        {
-            //            Record OneRec = new Record();
-
-            //            OneRec.DateTime = DateTime.FromOADate(mytempdouble[0]);
-            //            OneRec.Value = mytempdouble[i];
-
-            //            MyList[MyList.Count - N + i - 1].MyListRecordsForOneKKS.Add(OneRec);
-            //        }
-            //    }
-            //}
-            //p.AddRange(MyList);
-            //MyList.Clear();
-            //Закрытие потока
-            mysr.Close();
+            myFile.Close();
         }
 
         public void LoadAPIK(string filename, MyListOfSensors p)
