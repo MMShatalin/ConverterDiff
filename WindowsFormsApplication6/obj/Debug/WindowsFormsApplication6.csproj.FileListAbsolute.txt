@@ -70,3 +70,12 @@ C:\Users\admin\Desktop\Приутневу Александру\Передела�
 C:\Users\admin\Desktop\Приутневу Александру\Переделанный конвертер\Код\Конвертер\WindowsFormsApplication6\obj\Debug\WindowsFormsApplication6.Form1.resources
 C:\Users\admin\Desktop\Приутневу Александру\Переделанный конвертер\Код\Конвертер\WindowsFormsApplication6\obj\Debug\WindowsFormsApplication6.Properties.Resources.resources
 C:\Users\admin\Desktop\Приутневу Александру\Переделанный конвертер\Код\Конвертер\WindowsFormsApplication6\obj\Debug\WindowsFormsApplication6.csproj.GenerateResource.Cache
+D:\GitHub\ConverterDiff\WindowsFormsApplication6\bin\Debug\WindowsFormsApplication6.exe.config
+D:\GitHub\ConverterDiff\WindowsFormsApplication6\obj\Debug\WindowsFormsApplication6.exe
+D:\GitHub\ConverterDiff\WindowsFormsApplication6\obj\Debug\WindowsFormsApplication6.pdb
+D:\GitHub\ConverterDiff\WindowsFormsApplication6\bin\Debug\WindowsFormsApplication6.exe
+D:\GitHub\ConverterDiff\WindowsFormsApplication6\bin\Debug\WindowsFormsApplication6.pdb
+D:\GitHub\ConverterDiff\WindowsFormsApplication6\obj\Debug\WindowsFormsApplication6.csprojResolveAssemblyReference.cache
+D:\GitHub\ConverterDiff\WindowsFormsApplication6\obj\Debug\WindowsFormsApplication6.Form1.resources
+D:\GitHub\ConverterDiff\WindowsFormsApplication6\obj\Debug\WindowsFormsApplication6.Properties.Resources.resources
+D:\GitHub\ConverterDiff\WindowsFormsApplication6\obj\Debug\WindowsFormsApplication6.csproj.GenerateResource.Cache

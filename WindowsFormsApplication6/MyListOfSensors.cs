@@ -72,8 +72,6 @@ namespace Converter
             MyListOfSensors MyList = new MyListOfSensors();
             MyList.Clear();
 
-         //   List<string> strarray = new List<string>();
-           // List<string> strarray1 = new List<string>();
             line = mysr.ReadLine();
             string[] strarray1 = { "R1","R2","R3","J1","J2","J3"};
 
@@ -83,27 +81,23 @@ namespace Converter
                 myonekks.KKS_Name = strarray1[i];
                 p.Add(myonekks);
             }
-        
-            //for (int i = 0; i < helper1.Count; i++)
-            //{
-            //    MessageBox.Show(helper1[i].ToString());
-            //}
-         //   List<string> helper = new List<string>();
-         //   List<double> helper1 = new List<double>();
+
+            foreach (var item in p)
+            {
+                MessageBox.Show(item.KKS_Name);
+            }
 
             while ((line = mysr.ReadLine()) != null)
             {
                 List<string> helper = new List<string>();
                 List<double> helper1 = new List<double>();
-              //  line = mysr.ReadLine();
-               // MessageBox.Show();
                 try
                 {
                     helper = line.Split('\t').ToList();
 
                     for (int i = 0; i < helper.Count; i++)
                     {
-                        helper1.Add(double.Parse(helper[i].Replace('.', ',')));
+                        helper1.Add(double.Parse(helper[i]));
                     }
 
                     for (int i = 1; i < helper1.Count; i++)
@@ -116,9 +110,9 @@ namespace Converter
                         //            MyList[MyList.Count - N + i - 1].MyListRecordsForOneKKS.Add(OneRec);
                     }
                 }
-                catch
+                catch(Exception ex)
                 {
-
+                    MessageBox.Show(ex.Message);
                 }
                 helper.Clear();
                 helper1.Clear();
