@@ -56,7 +56,7 @@ namespace Converter
                         break;
 
                     case 2:
-                        this.LoadSTI(filename, y);
+                        this.LoadSTI2(filename, y);
                         break;
                     //редактировать
                  
@@ -65,13 +65,11 @@ namespace Converter
                 }
             }
         }
-        public void LoadSTI(string filename, MyListOfSensors p)
+
+        public void LoadSTI1(string filename, MyListOfSensors p)
         {
             string line = "";
             StreamReader myFile = new StreamReader(filename, Encoding.GetEncoding("Windows-1251"));
-        //    MyListOfSensors MyList = new MyListOfSensors();
-          //  MyList.Clear();
-
             line = myFile.ReadLine();
             List<string> myKksFast = new List<string>();
             myKksFast = line.Split('\t').ToList();
@@ -89,7 +87,8 @@ namespace Converter
                 myonekks.KKS_Name = myKksFast[i];
                 p.Add(myonekks);
             }
-            p.RemoveAt(0);
+            p.RemoveAt(5);
+
             while ((line = myFile.ReadLine()) != null)
             {
                 List<string> myHelpList = new List<string>();
@@ -105,20 +104,80 @@ namespace Converter
                     }
                 }
                 myValues.AddRange(myHelpList);
-                for (int i = 1; i < p.Count+1; i++)
+
+                for (int i = 0; i < myValues.Count; i++)
                 {
                     Record myRec = new Record();
-                    if (i != p.Count)
-                    {
-                        myRec.value1 = double.Parse(myValues[0].Replace(".", ",").Trim());
-                        myRec.Value = double.Parse(myValues[i].Replace(".", ",").Trim());
-                    }
-                    p[i-1].MyListRecordsForOneKKS.Add(myRec);
+                    myRec.value1 = double.Parse(myValues[0].Replace(".", ",").Trim());
+                    DateTime WindowsTime = new DateTime(1970, 1, 1).AddSeconds(myRec.value1);
+                    myRec.DateTime = WindowsTime;
+                    myRec.Value = double.Parse(myValues[i].Replace(".", ",").Trim());
+                    p[i].MyListRecordsForOneKKS.Add(myRec);
                 }
             }
-            myFile.Close();
+            p.RemoveAt(0);
         }
 
+        public void LoadSTI2(string filename, MyListOfSensors p)
+        {
+            string line = "";
+            StreamReader mysr = new StreamReader(filename, Encoding.GetEncoding("UTF-8"));
+            MyListOfSensors MyList = new MyListOfSensors();
+            MyList.Clear();
+            line = mysr.ReadLine();
+            string[] strarray1 = { "R1", "R2", "R3", "J1", "J2", "J3" };
+
+            for (int i = 0; i < strarray1.Length; i++)
+            {
+                Sencors myonekks = new Sencors();
+                myonekks.KKS_Name = strarray1[i];
+                p.Add(myonekks);
+            }
+
+            while ((line = mysr.ReadLine()) != null)
+            {
+                List<string> helper = new List<string>();
+                List<double> helper1 = new List<double>();
+                try
+                {
+                    helper = line.Split('\t').ToList();
+
+                    for (int i = 0; i < helper.Count; i++)
+                    {
+                        helper1.Add(double.Parse(helper[i].Replace('.', ',')));
+                    }
+
+                    for (int i = 1; i < helper1.Count; i++)
+                    {
+                        Record OneRec = new Record();
+
+                        OneRec.DateTime = DateTime.FromOADate(helper1[0]);
+                        OneRec.Value = helper1[i];
+                        p[i - 1].MyListRecordsForOneKKS.Add(OneRec);
+                        //            MyList[MyList.Count - N + i - 1].MyListRecordsForOneKKS.Add(OneRec);
+                    }
+                }
+                catch
+                {
+
+                }
+                helper.Clear();
+                helper1.Clear();
+
+            }
+
+            for (int i = 0; i < 3; i++)
+            {
+                p.Add(p[i]);
+
+            }
+            for (int i = 0; i < 3; i++)
+            {
+                p.RemoveAt(0);
+
+            }
+            mysr.Close();
+        }
         public void LoadAPIK(string filename, MyListOfSensors p)
         {
             string line = "";
