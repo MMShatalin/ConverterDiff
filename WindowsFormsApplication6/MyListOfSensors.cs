@@ -89,15 +89,15 @@ namespace Converter
 
             while ((line = mysr.ReadLine()) != null)
             {
-                List<string> helper = new List<string>();
+                string[] helper = new string[5];
                 List<double> helper1 = new List<double>();
                 try
                 {
-                    helper = line.Split('\t').ToList();
+                    helper = line.Split('\t').ToArray();
 
-                    for (int i = 0; i < helper.Count; i++)
+                    for (int i = 0; i < helper.Length; i++)
                     {
-                        helper1.Add(double.Parse(helper[i]));
+                        MessageBox.Show(helper[i]);
                     }
 
                     for (int i = 1; i < helper1.Count; i++)
@@ -114,7 +114,7 @@ namespace Converter
                 {
                     MessageBox.Show(ex.Message);
                 }
-                helper.Clear();
+              //  helper.Clear();
                 helper1.Clear();
 
             }
