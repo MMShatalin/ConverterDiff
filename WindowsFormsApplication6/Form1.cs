@@ -28,6 +28,7 @@ namespace WindowsFormsApplication6
 
         private void button1_Click(object sender, EventArgs e)
         {
+          
             if (openFileDialog1.ShowDialog() == DialogResult.OK)
             {
 
@@ -62,15 +63,28 @@ namespace WindowsFormsApplication6
 
         int[] MyConstIndexParametr = { 57, 79, 74, 229, 99, 98, 97, 238, 234, 48, 50, 60, 51, 56, 240 };
 
-      
+        private bool Flag = false;
         private void button3_Click(object sender, EventArgs e)
         {
+
+            string[] kkStrings =
+            {
+                "P1k", "Tcold", "Thot", "Ppg", "H10", "H9", "H8", "Lkd", "Lpg", "C", "Cp", "F", "N1",
+                "Ntg", "AO"
+            };
+
+            for (int i = 0; i < MyConstIndexParametr.Length; i++)
+            {
+                MyAllSensorsAPIK[MyConstIndexParametr[i]].KKS_Name = kkStrings[i];
+            }
+
+
             if (saveFileDialog1.ShowDialog() == DialogResult.OK)
             {
                 int indexBEGIN = 0;
                 if (MyAllSensorsFASTER[0].MyListRecordsForOneKKS[0].DateTime.ToOADate() > MyAllSensorsAPIK[0].MyListRecordsForOneKKS[0].DateTime.ToOADate())
                 {
-                    MessageBox.Show("Привет");
+                  //  MessageBox.Show("Привет");
                     for (int j = 0; j < MyAllSensorsAPIK[0].MyListRecordsForOneKKS.Count; j++)
                     {
                      
@@ -86,7 +100,7 @@ namespace WindowsFormsApplication6
                 {
              //       MessageBox.Show(MyAllSensorsFASTER[0].MyListRecordsForOneKKS[0].DateTime.ToOADate().ToString() + " " + MyAllSensorsAPIK[0].MyListRecordsForOneKKS[0].DateTime.ToOADate().ToString());
 
-                  MessageBox.Show("Пока");
+                //  MessageBox.Show("Пока");
                     for (int j = 0; j < MyAllSensorsFASTER[0].MyListRecordsForOneKKS.Count; j++)
                     {
                         if (MyAllSensorsAPIK[0].MyListRecordsForOneKKS[0].DateTime.ToString() == MyAllSensorsFASTER[0].MyListRecordsForOneKKS[j].DateTime.ToString())
@@ -96,7 +110,7 @@ namespace WindowsFormsApplication6
                         }
                     }
                 }
-                int p = 0;
+             //   MessageBox.Show(indexBEGIN.ToString());
                 MyListOfSensors ALLparametrs = new MyListOfSensors();
 
                 ALLparametrs.AddRange(MyAllSensorsFASTER);
@@ -112,67 +126,90 @@ namespace WindowsFormsApplication6
                     MyFasterFile.Write(ALLparametrs[i].KKS_Name + "\t");
                 }
                 MyFasterFile.WriteLine();
-                //   int j = 0;
-                double unixtime = 0;
-                double unixtime1 = 0;
-                int myindex = indexBEGIN;
-                //   int indexAPIK = 0;
-                if (MyAllSensorsFASTER[0].MyListRecordsForOneKKS[0].DateTime.ToOADate() < MyAllSensorsAPIK[0].MyListRecordsForOneKKS[0].DateTime.ToOADate())
-                {
-                    MessageBox.Show("Воу!");
-                    indexBEGIN = 0;
-                }
+                double unixtime;
+                double unixtime1;
+          
 
-                try
-                {
-                    for (int j = myindex; j < ALLparametrs[0].MyListRecordsForOneKKS.Count; j++)
+             //  try
+             //   {
+
+                    for (int j = indexBEGIN; j < MyAllSensorsFASTER[0].MyListRecordsForOneKKS.Count; j++)
                     {
-                        int Raznica = 0;
+                        //РАЗНИЦА НУЖНА ДЛЯ ПЕРЕХОДА К ДРУГОЙ СЕКУНДЕ 
+                        int raznica = 0;
+                        //ПЕРЕВОДИМ В ЮНИКС ВРЕМЯ
                         unixtime = ((ALLparametrs[0].MyListRecordsForOneKKS[j].DateTime) - new System.DateTime(1970, 1, 1, 0, 0, 0, 0)).TotalSeconds;
-                        if (j != myindex)
+                        //ЕСЛИ НЕ РАВНО ПЕРВОМУ ЗНАЧЕНИЮ ВЫЧИСЛЯЕМ РАЗНИЦУ
+                       
+                        if (j != indexBEGIN && indexBEGIN <= MyAllSensorsAPIK[0].MyListRecordsForOneKKS.Count-1)
                         {
                             unixtime1 = ((ALLparametrs[0].MyListRecordsForOneKKS[j - 1].DateTime) - new System.DateTime(1970, 1, 1, 0, 0, 0, 0)).TotalSeconds;
-                            Raznica = (int)unixtime - (int)unixtime1;
+                            raznica = (int)unixtime - (int)unixtime1;
                         }
-
-                        if (Raznica == 1)
+                        //СЧЕТЧИК РАСТЕТ ТОЛЬКО ПРИ ДОСТИЖЕНИИ 1 СЕК
+                        if (raznica == 1)
                         {
                             indexBEGIN++;
                         }
 
-                        MyFasterFile.Write((unixtime).ToString().Replace(',', '.') + "\t");
-                        var ii = 0;
 
+                        if (indexBEGIN <= MyAllSensorsAPIK[0].MyListRecordsForOneKKS.Count - 1)
+                        {
+                            MyFasterFile.Write((unixtime - 1161667555).ToString("f4").Replace(',', '.') + "\t");
+                        }
                         for (int i = 0; i < ALLparametrs.Count; i++)
                         {
-                            if (i < 6)
+                            if (indexBEGIN <= MyAllSensorsAPIK[0].MyListRecordsForOneKKS.Count-1)
                             {
-                                MyFasterFile.Write(ALLparametrs[i].MyListRecordsForOneKKS[j].Value.ToString().Replace(',', '.') + "\t");
-                            }
-                            if (i >= 6)
-                            {
-
-                                MyFasterFile.Write(ALLparametrs[i].MyListRecordsForOneKKS[indexBEGIN].Value.ToString().Replace(',', '.') + "\t");
-    
-                                if (i == ALLparametrs.Count - 1)
+                                if (i == 0)
                                 {
-                                    MyFasterFile.WriteLine();
+                                    string val = ALLparametrs[i].MyListRecordsForOneKKS[j].Value.ToString("e4").Replace(",",".");
+                                    MyFasterFile.Write(" " + val + " ");
+                                }
+
+                                if (i>0 && i < 4)
+                                {
+                                  //  "e={0:e}"
+                                    string val = ALLparametrs[i].MyListRecordsForOneKKS[j].Value.ToString("e4").Replace(",", ".");
+                                    MyFasterFile.Write(" " + val +" ");
+                                }
+                                if (i == 4)
+                                {
+                                    string val = ALLparametrs[i].MyListRecordsForOneKKS[j].Value.ToString("e4").Replace(",", ".");
+                                    MyFasterFile.Write("\t" + " " + val + " ");
+                                }
+                                if (i >= 5)
+                                {
+                                    //      MessageBox.Show(ALLparametrs[i].KKS_Name + " " + ALLparametrs[i].MyListRecordsForOneKKS.Count);
+
+                                    string val = ALLparametrs[i].MyListRecordsForOneKKS[indexBEGIN].Value.ToString("e4").Replace(",", "."); 
+                                    MyFasterFile.Write(" " + val + " ");
+
+                                    if (i == ALLparametrs.Count - 1)
+                                    {
+                                        MyFasterFile.WriteLine();
+                                    }
                                 }
                             }
+                            else
+                            {
+                                break;
+                            }
                         }
-                        if (j != indexBEGIN && ((int)unixtime - (int)unixtime1 != 1))
-                        {
-                            ii++;
-                        }
+                       // if (j != indexBEGIN && ((int)unixtime - (int)unixtime1 != 1))
+                       // {
+                          ///  ii++;
+                       // }
 
                     }
-                }
-                catch(Exception ex)
-                {
-                    MessageBox.Show(ex.Message);
-                }
+               // }
+            //   catch(Exception ex)
+             //  {
+                //   MyFasterFile.Write("tytryrt" + "\t");
+              // }
                 MyFasterFile.Close();
             }       
+
         }
         private void t()
         {
@@ -186,6 +223,11 @@ namespace WindowsFormsApplication6
         }
         private void Form1_Load(object sender, EventArgs e)
         {
+            openFileDialog1.Filter = "txt files (*.txt)|*.txt|All files (*.*)|*.*";
+            openFileDialog2.Filter = "sti files (*.sti)|*.sti|All files (*.*)|*.*";
+
+
+
             tabPage1.Text = "Файл АПИК";
             tabPage2.Text = "Файл FASTER";
             tabPage3.Text = "Параметры";

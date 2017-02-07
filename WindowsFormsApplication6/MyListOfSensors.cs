@@ -125,21 +125,21 @@ namespace Converter
             MyListOfSensors MyList = new MyListOfSensors();
             MyList.Clear();
             line = mysr.ReadLine();
-            string[] strarray1 = { "R1", "R2", "R3", "J1", "J2", "J3" };
+            string[] strarray1 = { "R1", "R2", "Rc", "J1", "J2", "J3" };
 
             for (int i = 0; i < strarray1.Length; i++)
             {
                 Sencors myonekks = new Sencors();
                 myonekks.KKS_Name = strarray1[i];
-                p.Add(myonekks);
+                MyList.Add(myonekks);
             }
 
             while ((line = mysr.ReadLine()) != null)
             {
                 List<string> helper = new List<string>();
                 List<double> helper1 = new List<double>();
-                try
-                {
+               // try
+               // {
                     helper = line.Split('\t').ToList();
 
                     for (int i = 0; i < helper.Count; i++)
@@ -153,29 +153,27 @@ namespace Converter
 
                         OneRec.DateTime = DateTime.FromOADate(helper1[0]);
                         OneRec.Value = helper1[i];
-                        p[i - 1].MyListRecordsForOneKKS.Add(OneRec);
+                        MyList[i - 1].MyListRecordsForOneKKS.Add(OneRec);
                         //            MyList[MyList.Count - N + i - 1].MyListRecordsForOneKKS.Add(OneRec);
                     }
-                }
-                catch
-                {
+              //  }
+             //   catch
+            //    {
 
-                }
+              //  }
                 helper.Clear();
                 helper1.Clear();
 
             }
-
-            for (int i = 0; i < 3; i++)
+            for (int i = 3; i < MyList.Count-1; i++)
             {
-                p.Add(p[i]);
-
+                p.Add(MyList[i]);
             }
             for (int i = 0; i < 3; i++)
             {
-                p.RemoveAt(0);
-
+                p.Add(MyList[i]);
             }
+            
             mysr.Close();
         }
         public void LoadAPIK(string filename, MyListOfSensors p)
@@ -245,6 +243,9 @@ namespace Converter
           //  MyList.RemoveAt(2);
             p.AddRange(MyList);
             MyList.Clear();
+
+       
+
             //Закрытие потока
             mysr.Close();
         }

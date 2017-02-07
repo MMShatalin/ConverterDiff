@@ -154,7 +154,7 @@
             this.tabPage4.Location = new System.Drawing.Point(4, 22);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(262, 276);
+            this.tabPage4.Size = new System.Drawing.Size(479, 276);
             this.tabPage4.TabIndex = 1;
             this.tabPage4.Text = "tabPage4";
             this.tabPage4.UseVisualStyleBackColor = true;
@@ -165,7 +165,7 @@
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView1.Location = new System.Drawing.Point(3, 3);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(256, 270);
+            this.dataGridView1.Size = new System.Drawing.Size(473, 270);
             this.dataGridView1.TabIndex = 0;
             // 
             // tabPage2
@@ -174,7 +174,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(276, 308);
+            this.tabPage2.Size = new System.Drawing.Size(493, 308);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "tabPage2";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -187,7 +187,7 @@
             this.tabControl3.Location = new System.Drawing.Point(3, 3);
             this.tabControl3.Name = "tabControl3";
             this.tabControl3.SelectedIndex = 0;
-            this.tabControl3.Size = new System.Drawing.Size(270, 302);
+            this.tabControl3.Size = new System.Drawing.Size(487, 302);
             this.tabControl3.TabIndex = 0;
             // 
             // tabPage5
@@ -196,7 +196,7 @@
             this.tabPage5.Location = new System.Drawing.Point(4, 22);
             this.tabPage5.Name = "tabPage5";
             this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage5.Size = new System.Drawing.Size(262, 276);
+            this.tabPage5.Size = new System.Drawing.Size(479, 276);
             this.tabPage5.TabIndex = 0;
             this.tabPage5.Text = "tabPage5";
             this.tabPage5.UseVisualStyleBackColor = true;
@@ -208,7 +208,7 @@
             this.checkedListBox2.FormattingEnabled = true;
             this.checkedListBox2.Location = new System.Drawing.Point(3, 3);
             this.checkedListBox2.Name = "checkedListBox2";
-            this.checkedListBox2.Size = new System.Drawing.Size(256, 270);
+            this.checkedListBox2.Size = new System.Drawing.Size(473, 270);
             this.checkedListBox2.TabIndex = 0;
             this.checkedListBox2.SelectedIndexChanged += new System.EventHandler(this.checkedListBox2_SelectedIndexChanged);
             // 
@@ -218,7 +218,7 @@
             this.tabPage6.Location = new System.Drawing.Point(4, 22);
             this.tabPage6.Name = "tabPage6";
             this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage6.Size = new System.Drawing.Size(262, 276);
+            this.tabPage6.Size = new System.Drawing.Size(479, 276);
             this.tabPage6.TabIndex = 1;
             this.tabPage6.Text = "tabPage6";
             this.tabPage6.UseVisualStyleBackColor = true;
@@ -229,7 +229,7 @@
             this.dataGridView2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView2.Location = new System.Drawing.Point(3, 3);
             this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.Size = new System.Drawing.Size(256, 270);
+            this.dataGridView2.Size = new System.Drawing.Size(473, 270);
             this.dataGridView2.TabIndex = 0;
             // 
             // tableLayoutPanel1
@@ -316,10 +316,12 @@
             // openFileDialog1
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
+            this.openFileDialog1.Multiselect = true;
             // 
             // openFileDialog2
             // 
             this.openFileDialog2.FileName = "openFileDialog2";
+            this.openFileDialog2.Multiselect = true;
             // 
             // tableLayoutPanel2
             // 
